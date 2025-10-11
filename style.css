@@ -3,7 +3,7 @@ body {
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
-  max-width: 200;
+  max-width: 200ch;
   margin-inline: 2rem 2rem;
   padding-inline: 1rem;
 }
@@ -58,7 +58,7 @@ form label {
   grid-column: 1 / -1;
 }
 
-form label > input
+form label > input,
 form label > textarea {
   grid-column: 2;
   width: 100%;
@@ -71,7 +71,8 @@ form button{
 
 .projects{
   display: grid;
-  grid-template-columns: repeat(auto-fill minmax(15em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
 }
 
 .projects article{
@@ -84,9 +85,7 @@ form button{
   margin: 0
 }
 
-.projects{gap: 1em;}
-
-h1{ font-size: 400%}
+h1{ font-size: 400%};
 h1, h2, h3, h4, h5, h6{
   line-height: 1.1;
   text-wrap: balance;
