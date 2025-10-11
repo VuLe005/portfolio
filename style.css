@@ -90,3 +90,54 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.1;
   text-wrap: balance;
 }
+
+body.resume h1{
+  font-size: 250%;
+  line-height: 1.1;
+  margin-block: .25rem .5rem;
+}
+
+body.resume .contact{
+  margin-block: 0 1.25rem;
+  font-size: 0.95rem;
+}
+
+body.resume section{
+  margin-block: 1.5rem 2rem;
+}
+
+body.resume section > h2{
+  margin: 0 0 .5rem 0;
+  padding-bottom: .25rem;
+  border-bottom: 1px solid oklch(80% 3% 200);
+}
+
+body.resume section article{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .25rem 1rem;
+  margin-block: .75rem 1rem;
+}
+
+body.resume section article h3{
+  grid-column: 1;
+  margin: 0;
+}
+
+body.resume section article p:first-of-type{
+  grid-column: 2;
+  margin: 0;
+  text-align: right;
+  white-space: nowrap;
+  color: oklch(40% 0 0);
+}
+
+body.resume section article ul{
+  grid-column: 1 / -1;
+  margin: .25rem 0 0 1rem;
+}
+
+body.resume ul{ padding-left: 1.1rem; }
+
+body.resume a{ text-decoration: none; }
+body.resume a:hover{ text-decoration: underline; }
