@@ -1,13 +1,9 @@
-body{
+body {
+  /* Set line height to 1.5 times the font size
+	   and use the OS’s UI font as the website font
+	 */
   font: 100%/1.5 system-ui;
-  max-width: 40ch;          /* TEMP: make it small to prove it works */
+  max-width: 100ch;
   margin-inline: auto;
   padding-inline: 1rem;
-  outline: 1px dashed #ccc; /* TEMP: so you can see the body box */
-}
-
-img{
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
