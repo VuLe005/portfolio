@@ -66,7 +66,21 @@ for (let p of pages) {
 }
 
 const select = document.querySelector('.color-scheme select')
+
+function setColorScheme(colorScheme) {
+  document.documentElement.style.setProperty('color-scheme', colorScheme);
+}
+
+
+if ('colorScheme' in localStorage) {
+  const saved = localStorage.colorScheme;
+  setColorScheme(saved);
+  select.value = saved;
+}
+
 select.addEventListener('input', function (event) {
-    console.log('color scheme changed to', event.target.value);
-    document.documentElement.style.setProperty('color-scheme', event.target.value);
+  const value = event.target.value;
+  setColorScheme(value);
+  localStorage.colorScheme = value;
 });
+
