@@ -84,3 +84,22 @@ select.addEventListener('input', function (event) {
   localStorage.colorScheme = value;
 });
 
+const form = document.querySelector('form');
+
+form?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const data = new FormData(form);
+
+  let url = form.action;
+  const params = [];
+
+  for (let [name, value] of data) {
+    params.push(`${encodeURIComponent(name)}=${encodeURIComponent(value)}`);
+  }
+
+  if (params.length) {
+    url += (url.includes('?') ? '&' : '?') + params.join('&');
+  }
+
+  location.href = url;
+});
