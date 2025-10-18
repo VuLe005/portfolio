@@ -22,6 +22,19 @@ let pages = [
   { url: "https://github.com/VuLe005", title: "GitHub" },
 ];
 
+document.body.insertAdjacentHTML(
+  'afterbegin',
+  `
+	<label class="color-scheme">
+		Theme:
+		<select>
+			<option value="light dark">Automatic</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+		</select>
+	</label>`,
+);
+
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
