@@ -142,3 +142,7 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
   if (Array.isArray(project)) project.forEach(renderOne);
   else if (project && typeof project === 'object') renderOne(project);
 }
+
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${encodeURIComponent(username)}`);
+}
