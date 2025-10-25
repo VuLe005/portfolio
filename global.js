@@ -65,7 +65,7 @@ for (let p of pages) {
 
 }
 
-const select = document.querySelector('.color-scheme select')
+const select = document.querySelector('.color-scheme select');
 
 function setColorScheme(colorScheme) {
   document.documentElement.style.setProperty('color-scheme', colorScheme);
