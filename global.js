@@ -117,6 +117,28 @@ export async function fetchJSON(url) {
     return data;
   } catch (error) {
     console.error('Error fetching or parsing JSON data:', error);
-    throw error;
   }
+}
+
+
+export function renderProjects(project, containerElement, headingLevel = 'h2') {
+  if (!containerElement) return;
+
+  const renderOne = p => {
+    const title = p?.title ?? '';
+    const image = p?.image ?? '';
+    const description = p?.description ?? '';
+
+    const article = document.createElement('article');
+    article.innerHTML = `
+      <${headingLevel}>${title}</${headingLevel}>
+      ${image ? `<img src="${image}" alt="${title}">` : ''}
+      <p>${description}</p>
+    `;
+    containerElement.appendChild(article);
+  };
+
+  containerElement.innerHTML = '';
+  if (Array.isArray(project)) project.forEach(renderOne);
+  else if (project && typeof project === 'object') renderOne(project);
 }
