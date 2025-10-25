@@ -153,3 +153,50 @@ body.resume ul{ padding-left: 1.1rem; }
 
 body.resume a{ text-decoration: none; }
 body.resume a:hover{ text-decoration: underline; }
+
+#profile-stats {
+  margin-top: 1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.stats .stat-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.stats .stat-card dt,
+.stats .stat-card dd {
+  margin: 0;
+}
+
+.stats .stat-card dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 0.35rem;
+}
+
+.stats .stat-card dd {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+@media (prefers-color-scheme: light) {
+  .stats .stat-card {
+    border-color: rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.02);
+  }
+}

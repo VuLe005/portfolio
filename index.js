@@ -9,11 +9,23 @@ const githubData = await fetchGitHubData('vule005');
 const profileStats = document.querySelector('#profile-stats');
 if (profileStats) {
   profileStats.innerHTML = `
-        <dl>
-          <dt>Public Repos:</dt><dd>${githubData.public_repos}</dd>
-          <dt>Public Gists:</dt><dd>${githubData.public_gists}</dd>
-          <dt>Followers:</dt><dd>${githubData.followers}</dd>
-          <dt>Following:</dt><dd>${githubData.following}</dd>
-        </dl>
-    `;
+    <dl class="stats">
+      <div class="stat-card">
+        <dt>Followers</dt>
+        <dd>${githubData.followers}</dd>
+      </div>
+      <div class="stat-card">
+        <dt>Following</dt>
+        <dd>${githubData.following}</dd>
+      </div>
+      <div class="stat-card">
+        <dt>Public Repos</dt>
+        <dd>${githubData.public_repos}</dd>
+      </div>
+      <div class="stat-card">
+        <dt>Public Gists</dt>
+        <dd>${githubData.public_gists}</dd>
+      </div>
+    </dl>
+  `;
 }
