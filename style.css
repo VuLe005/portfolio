@@ -3,7 +3,7 @@ body {
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
-  max-width: 125ch;
+  max-width: 130ch;
   margin-inline: 2rem 2rem;
   padding-inline: 1rem;
 }
@@ -199,4 +199,74 @@ body.resume a:hover{ text-decoration: underline; }
     border-color: rgba(0, 0, 0, 0.12);
     background: rgba(0, 0, 0, 0.02);
   }
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: .6rem .8rem;
+  margin: 1rem 0;
+  padding: .5rem .6rem;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+}
+
+.legend li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  min-width: 9em;
+}
+
+.legend .swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1 / 1;
+  background: var(--color);
+  border-radius: .25em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .legend {
+  flex: 1;
+}
+
+.searchBar {
+  display: block;
+  width: min(100%, 100rem);
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: .5rem .75rem;
+  border: 1px solid oklch(80% 3% 200 / 40%);
+  border-radius: .5rem;
+  font: inherit;
+}
+
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important; /* override inline --color */
+}
+.selected:is(path) {
+  fill: var(--color);
 }

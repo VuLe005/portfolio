@@ -128,12 +128,16 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
     const title = p?.title ?? '';
     const image = p?.image ?? '';
     const description = p?.description ?? '';
+    const year = p?.year ?? '';
 
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${title}</${headingLevel}>
       ${image ? `<img src="${image}" alt="${title}">` : ''}
-      <p>${description}</p>
+      <div class="project-body">
+        <p>${description}</p>
+        ${year ? `<small class="year">c. <span>${year}</span></small>` : ''}
+      </div>
     `;
     containerElement.appendChild(article);
   };
