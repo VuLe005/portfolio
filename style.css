@@ -270,3 +270,46 @@ path {
 .selected:is(path) {
   fill: var(--color);
 }
+
+
+dl.stats{
+  display:grid;
+  grid-template-columns:max-content 1fr;
+  gap:.25rem .75rem;
+  max-width:680px;
+}
+dl.stats dt{ color:#555; font-weight:600; }
+dl.stats dd{ margin:0; }
+
+.gridlines line{ stroke:#999; stroke-opacity:.25; }
+.gridlines path{ display:none; }
+
+dl.info{
+  display:grid;
+  grid-template-columns:max-content 1fr;
+  gap:.25rem .75rem;
+  transition-duration:500ms;
+  transition-property:opacity, visibility;
+}
+dl.info[hidden]:not(:hover, :focus-within){
+  opacity:0;
+  visibility:hidden;
+}
+.tooltip{
+  position:fixed;
+  top:1em;
+  left:1em;
+  background-color:rgba(255,255,255,.9);
+  color:#111;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+  border-radius:8px;
+  padding:.75rem 1rem;
+  backdrop-filter:blur(4px);
+}
+
+#chart svg circle{
+  transition:200ms;
+  transform-origin:center;
+  transform-box:fill-box;
+}
+#chart svg circle:hover{ transform:scale(1.5); }

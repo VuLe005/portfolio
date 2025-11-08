@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project meta stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1>Project meta stats</h1>
+    <div id="stats"></div>
+
+    <h2>Commits by time of day</h2>
+    <div id="chart"></div>
+<dl id="commit-tooltip" class="info tooltip" hidden>
+  <dt>Commit</dt>
+  <dd>
+    <a href="" id="commit-link" target="_blank"></a>
+  </dd>
+
+  <dt>Date</dt>
+  <dd id="commit-date"></dd>
+
+  <!-- Add: Time, author, lines edited -->
+</dl>
+
+    <p id="selection-count">No commits selected</p>
+    <dl id="language-breakdown" class="stats"></dl>
+    
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
