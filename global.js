@@ -130,6 +130,15 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
     const image = p?.image ?? '';
     const description = p?.description ?? '';
     const year = p?.year ?? '';
+    const url = p?.url ?? '';
+
+    const linkHTML = url
+      ? `<p class="project-link">
+           <a href="${url}"${url.startsWith('http') ? ' target="_blank" rel="noopener"' : ''}>
+             View project
+           </a>
+         </p>`
+      : '';
 
     const article = document.createElement('article');
     article.innerHTML = `
@@ -138,6 +147,7 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
       <div class="project-body">
         <p>${description}</p>
         ${year ? `<small class="year">c. <span>${year}</span></small>` : ''}
+        ${linkHTML}
       </div>
     `;
     containerElement.appendChild(article);
