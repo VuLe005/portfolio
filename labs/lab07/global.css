@@ -1,0 +1,34 @@
+body {
+  font: 100%/1.5 system-ui, sans-serif;
+  display: flex;
+  flex-flow: column;
+  max-width: 80em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
+}
+
+header label {
+  margin-left: auto;
+}
+
+#time-slider {
+  width: 14rem;
+}
+
+#selected-time,
+#any-time {
+  display: block;
+}
+
+#any-time {
+  font-style: italic;
+  opacity: 0.7;
+}

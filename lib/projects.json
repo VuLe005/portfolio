@@ -3,71 +3,84 @@
     "title": "P-300 Magician",
     "year": "2023",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Simple card spellerto trigger P-300 responses"
+    "description": "Simple card speller to trigger P-300 responses",
+    "url": "#"
   },
   {
     "title": "Spotify Sentimental Song Changer",
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "RNN/LSTM neural network that autochanges song playlist depending on words"
+    "description": "RNN/LSTM neural network that autochanges song playlist depending on words",
+    "url": "#"
   },
   {
     "title": "Magic Cursor",
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Control a mouse using only eye movement"
+    "description": "Control a mouse using only eye movement",
+    "url": "#"
   },
   {
     "title": "Bio Suit",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Detect signals from muscles in the body to determine fatigued they are"
+    "description": "Detect signals from muscles in the body to determine fatigued they are",
+    "url": "#"
   },
   {
     "title": "EEG Drone",
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Controlling a drone via hand movements"
+    "description": "Controlling a drone via hand movements",
+    "url": "#"
   },
   {
     "title": "Chess Bot",
     "year": "2024",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Created a chess bot using a neural network and Monte Carlo"},
+    "description": "Created a chess bot using a neural network and Monte Carlo",
+    "url": "#"
+  },
   {
-    "title": "Maiores accusamus quos sit.",
-    "year": "2018",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Eaque optio, maiores adipisci sequi perferendis voluptas quidem magnam commodi molestias tenetur aut eum amet iure minus accusantium necessitatibus minima nobis! Adipisci saepe natus exercitationem magnam. Neque doloribus eveniet placeat."
+    "title": "Bike Watching",
+    "year": "2025",
+    "image": "https://vule005.github.io/portfolio/labs/lab07/bikewatching.png",
+    "description": "Interactive Mapbox + D3 visualization of Boston Bluebikes traffic with time filtering and flow-based colors.",
+    "url": "https://vule005.github.io/portfolio/labs/lab07/index.html"
   },
   {
     "title": "Fuga magnam quis modi.",
     "year": "2018",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "At sed reiciendis nobis omnis ipsam ab recusandae dolores. Fugit consectetur maiores nisi laborum, aspernatur accusantium, mollitia magni amet libero facere doloremque provident exercitationem pariatur, autem ex impedit maxime sapiente."
+    "description": "At sed reiciendis nobis omnis ipsam ab recusandae dolores. Fugit consectetur maiores nisi laborum, aspernatur accusantium, mollitia magni amet libero facere doloremque provident exercitationem pariatur, autem ex impedit maxime sapiente.",
+    "url": "#"
   },
   {
     "title": "Saepe eligendi ipsam consequatur.",
     "year": "2018",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Assumenda exercitationem aperiam atque ipsum natus beatae hic amet voluptatem sapiente, illum tempora ex labore est fuga voluptas quibusdam harum corrupti odit. Alias sed, dignissimos nulla unde harum accusantium sunt?"
+    "description": "Assumenda exercitationem aperiam atque ipsum natus beatae hic amet voluptatem sapiente, illum tempora ex labore est fuga voluptas quibusdam harum corrupti odit. Alias sed, dignissimos nulla unde harum accusantium sunt?",
+    "url": "#"
   },
   {
     "title": "Fugit iusto in reiciendis!",
     "year": "2018",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Maxime voluptas amet necessitatibus consectetur suscipit illum fugiat sed tempore quaerat aperiam harum, voluptatum qui impedit excepturi deleniti tenetur. Odit minus obcaecati, vitae corporis tempore culpa magnam. Facilis, hic eligendi!"
+    "description": "Maxime voluptas amet necessitatibus consectetur suscipit illum fugiat sed tempore quaerat aperiam harum, voluptatum qui impedit excepturi deleniti tenetur. Odit minus obcaecati, vitae corporis tempore culpa magnam. Facilis, hic eligendi!",
+    "url": "#"
   },
   {
     "title": "Nobis rerum vel quo.",
     "year": "2018",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Mollitia, ea nam repellat perspiciatis cupiditate similique illum eveniet saepe cumque ipsum deserunt vitae labore, illo minus amet quasi? Numquam eum non asperiores doloremque culpa nihil rerum illo quo vero!"
+    "description": "Mollitia, ea nam repellat perspiciatis cupiditate similique illum eveniet saepe cumque ipsum deserunt vitae labore, illo minus amet quasi? Numquam eum non asperiores doloremque culpa nihil rerum illo quo vero!",
+    "url": "#"
   },
   {
     "title": "Veniam, tenetur dignissimos. Consectetur!",
     "year": "2018",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Nobis doloribus autem illo corporis voluptatibus laborum eos, aut dolorum recusandae quas totam dicta debitis, necessitatibus odio quisquam nulla. Dignissimos omnis id unde nisi sit! Saepe sunt quidem itaque ex?"
+    "description": "Nobis doloribus autem illo corporis voluptatibus laborum eos, aut dolorum recusandae quas totam dicta debitis, necessitatibus odio quisquam nulla. Dignissimos omnis id unde nisi sit! Saepe sunt quidem itaque ex?",
+    "url": "#"
   }
 ]
